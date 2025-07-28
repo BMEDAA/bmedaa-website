@@ -1,0 +1,398 @@
+/* 會員中心樣式 */
+.member-dashboard {
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* 歡迎區域 */
+.welcome-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px 0;
+  margin-bottom: 40px;
+}
+
+.welcome-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.welcome-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.welcome-text p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.welcome-avatar img,
+.avatar-placeholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.avatar-placeholder {
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* 快速功能區 */
+.quick-actions {
+  margin-bottom: 40px;
+}
+
+.quick-actions h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.actions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.action-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  color: inherit;
+  text-decoration: none;
+}
+
+.action-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: white;
+}
+
+.action-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.action-card p {
+  color: #7f8c8d;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* 主要內容區域 */
+.dashboard-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* 會員資訊卡片 */
+.member-info-card {
+  background: white;
+}
+
+.member-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.info-item strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.info-item span {
+  color: #5a6c7d;
+}
+
+.status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status.active {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status.inactive {
+  background: #fff3cd;
+  color: #856404;
+}
+
+/* 新聞列表 */
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.news-item {
+  padding: 16px 0;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.news-date {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.news-item h4 {
+  color: #2c3e50;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.news-item p {
+  color: #7f8c8d;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* 統計卡片 */
+.stats-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+}
+
+.stat-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.stat-content h3 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.stat-content p {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* 活動列表 */
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.event-item {
+  display: flex;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.event-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.event-date {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  min-width: 60px;
+  height: fit-content;
+}
+
+.event-date .month {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.event-date .day {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.event-info h4 {
+  color: #2c3e50;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.event-info p {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin: 2px 0;
+}
+
+/* 聯絡資訊 */
+.contact-card .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #5a6c7d;
+}
+
+.contact-item svg {
+  color: #667eea;
+  flex-shrink: 0;
+}
+
+/* 查看全部連結 */
+.view-all {
+  color: #667eea;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.view-all:hover {
+  color: #764ba2;
+}
+
+/* 響應式設計 */
+@media (max-width: 1024px) {
+  .dashboard-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .actions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .welcome-text h1 {
+    font-size: 2rem;
+  }
+  
+  .actions-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats-cards {
+    gap: 12px;
+  }
+  
+  .stat-card {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-text h1 {
+    font-size: 1.75rem;
+  }
+  
+  .action-card {
+    padding: 24px 20px;
+  }
+  
+  .action-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .event-item {
+    flex-direction: column;
+    text-align: center;
+  }
+} 
