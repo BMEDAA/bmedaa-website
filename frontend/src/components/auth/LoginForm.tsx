@@ -143,10 +143,9 @@ const LoginForm: React.FC = () => {
 
         {/* 測試帳號資訊 */}
         <div className="demo-info">
-          <h3>測試帳號範例</h3>
-          <p><strong>帳號：</strong>1415ds5y04@gmail.com</p>
-          <p><strong>密碼：</strong>65488448</p>
-          <p><strong>或：</strong>bairen2122@gmail.com / 51112137</p>
+          <h3>登入說明</h3>
+          <p><strong>帳號：</strong>登記電郵</p>
+          <p><strong>密碼：</strong>手提電話</p>
           <p style={{ fontSize: '0.85rem', color: '#6c757d', marginTop: '10px' }}>
             * 請使用您的真實校友會帳號和密碼登入
           </p>
