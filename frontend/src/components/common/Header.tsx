@@ -98,7 +98,7 @@ const Header: React.FC = () => {
           ) : (
             <div className="auth-buttons">
               <Link to="/login" className="login-btn">登入</Link>
-              <Link to="/forum" className="register-btn">論壇</Link>
+              <Link to="/benefits" className="register-btn">福利</Link>
             </div>
           )}
         </div>
@@ -171,12 +171,8 @@ const Header: React.FC = () => {
               </div>
             ) : (
               <div className="mobile-auth-buttons">
-                <Link to="/login" className="mobile-login-btn" onClick={() => setIsMenuOpen(false)}>
-                  登入
-                </Link>
-                <Link to="/forum" className="mobile-register-btn" onClick={() => setIsMenuOpen(false)}>
-                  論壇
-                </Link>
+                <Link to="/login" className="mobile-login-btn">登入</Link>
+                <Link to="/benefits" className="mobile-register-btn">福利</Link>
               </div>
             )}
           </div>

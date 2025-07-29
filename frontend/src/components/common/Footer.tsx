@@ -35,9 +35,9 @@ const Footer: React.FC = () => {
           {/* 校友會資訊 */}
           <div className="footer-section">
             <div className="footer-logo">
-              <h3>BMEDAA校友會</h3>
+              <h3>BMEDAA</h3>
               <span>數學及數學教育校友會</span>
-              <p>本會的宗旨是團結所有畢業於「香港中文大學數學及數學教育課程」的校友，加強守望相助精神及協助提高校友的專業水平，並以其專業知識推動香港數學教育發展。</p>
+              <p>本會的宗旨是團結所有畢業於「香港中文大學數學及數學教育」的校友，加強守望相助精神及協助提高校友的專業水平，並以其專業知識推動香港數學教育發展。</p>
             </div>
             <div className="social-links">
               <a 

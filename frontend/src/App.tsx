@@ -18,7 +18,7 @@ import ContactPage from './pages/public/ContactPage';
 import SpotlightPage from './pages/public/SpotlightPage';
 import DonatePage from './pages/public/DonatePage';
 import FAQPage from './pages/public/FAQPage';
-import ForumPage from './pages/public/ForumPage';
+import BenefitsPage from './pages/public/BenefitsPage';
 import PrivacyPage from './pages/public/PrivacyPage';
 
 // 認證頁面
@@ -55,6 +55,7 @@ function App() {
               <Route path="/donate" element={<DonatePage />} />
               <Route path="/faq" element={<FAQPage />} />
               <Route path="/forum" element={<ForumPage />} />
+              <Route path="/benefits" element={<BenefitsPage />} />
               <Route path="/privacy" element={<PrivacyPage />} />
               
               {/* 認證路由 */}

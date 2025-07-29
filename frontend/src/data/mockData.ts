@@ -35,7 +35,7 @@ export const realMemberData = [
 export const mockNews: NewsItem[] = [
   {
     id: '1',
-    title: '香港中文大學數學及數學教育課程校友會會員大會及下任幹事會選舉',
+    title: '香港中文大學數學及數學教育課程校友會會員大會',
     content: '各位校友，香港中文大學數學及數學教育課程校友會將於2025年8月25日晚上6時30分舉辦會員大會及下任幹事會選舉。會議地點為香港中文大學何添樓B5，請各位會員撥冗出席。會議將討論2025-2027年度工作計劃，並進行新一屆幹事會選舉。',
     summary: '2025年8月25日晚上6:30於何添樓B5舉辦會員大會及幹事會選舉',
     author: '香港中文大學數學及數學教育課程校友會秘書處',
@@ -62,7 +62,7 @@ export const mockNews: NewsItem[] = [
 export const mockEvents: Event[] = [
   {
     id: '1',
-    title: '香港中文大學數學及數學教育課程校友會會員大會',
+    title: '香港中文大學數學及數學教育校友會會員大會',
     description: '討論會務發展及選舉新一屆幹事會，所有會員均可參與投票。',
     startDate: new Date('2025-08-25T18:30:00'),
     endDate: new Date('2025-08-25T20:30:00'),
@@ -81,6 +81,22 @@ export const mockEvents: Event[] = [
         url: '#'
       }
     ],
+  },
+  {
+    id: '2',
+    title: 'OCAMP食宵',
+    description: '數學校友會會員大會後的聯誼聚餐活動，增進校友間的感情交流。',
+    startDate: new Date('2025-08-22T18:30:00'),
+    endDate: new Date('2025-08-22T21:00:00'),
+    location: '泰源大排檔',
+    capacity: 50,
+    registeredCount: 18,
+    isPublic: true,
+    category: 'gathering',
+    registrationDeadline: new Date('2025-08-20'),
+    contactPerson: '活動組',
+    contactEmail: 'alumni.bmed@gmail.com',
+    imageUrl: 'https://images.unsplash.com/photo-1577303935007-0d306ee634cf?w=600&h=400&fit=crop',
   },
   {
     id: '2',

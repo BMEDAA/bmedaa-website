@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, Users, BookOpen, Heart, ArrowRight, Award, TrendingUp } from 'lucide-react';
 import { mockNews, mockEvents, mockAlumniSpotlight } from '../../data/mockData';
+import InstagramFeed from '../../components/InstagramFeed';
 import './HomePage.css';
 
 const HomePage: React.FC = () => {
@@ -120,60 +121,32 @@ const HomePage: React.FC = () => {
             <Link to="/events" className="view-more">查看全部</Link>
           </div>
           
-          {/* Instagram 活動提示 */}
-          {upcomingEvents.length === 0 && (
-            <div style={{ 
-              textAlign: 'center', 
-              padding: '40px 20px', 
-              background: '#f8f9fa', 
-              borderRadius: '12px', 
-              margin: '20px 0' 
-            }}>
-              <h3 style={{ color: '#2c3e50', marginBottom: '10px' }}>最新活動資訊</h3>
-              <p style={{ color: '#7f8c8d', marginBottom: '15px' }}>
-                活動詳情請關注我們的Instagram帳號獲取最新資訊
-              </p>
-              <a 
-                href="https://www.instagram.com/cuhk_bmedaa/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '8px',
-                  background: '#667eea',
-                  color: 'white',
-                  padding: '10px 20px',
-                  borderRadius: '8px',
-                  textDecoration: 'none',
-                  fontWeight: '600'
-                }}
-              >
-                📱 關注 @cuhk_bmedaa
-              </a>
-            </div>
-          )}
+          {/* Instagram Feed */}
+          <InstagramFeed />
           
-          <div className="events-grid">
-            {upcomingEvents.map((event) => (
-              <div key={event.id} className="event-card">
-                <div className="event-date">
-                  <span className="month">{event.startDate.toLocaleDateString('zh-TW', { month: 'short' })}</span>
-                  <span className="day">{event.startDate.getDate()}</span>
-                </div>
-                <div className="event-content">
-                  <h3>{event.title}</h3>
-                  <p>{event.description}</p>
-                  <div className="event-meta">
-                    <span className="event-location">📍 {event.location}</span>
-                    <span className="event-capacity">
-                      👥 {event.registeredCount}/{event.capacity}
-                    </span>
+          {/* 傳統活動列表（如果有的話） */}
+          {upcomingEvents.length > 0 && (
+            <div className="events-grid" style={{ marginTop: '30px' }}>
+              {upcomingEvents.map((event) => (
+                <div key={event.id} className="event-card">
+                  <div className="event-date">
+                    <span className="month">{event.startDate.toLocaleDateString('zh-TW', { month: 'short' })}</span>
+                    <span className="day">{event.startDate.getDate()}</span>
+                  </div>
+                  <div className="event-content">
+                    <h3>{event.title}</h3>
+                    <p>{event.description}</p>
+                    <div className="event-meta">
+                      <span className="event-location">📍 {event.location}</span>
+                      <span className="event-capacity">
+                        👥 {event.registeredCount}/{event.capacity}
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
