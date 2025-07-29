@@ -26,7 +26,15 @@ const EventsPage: React.FC = () => {
                     fontSize: '0.85rem',
                     fontWeight: '600'
                   }}>
-                    {event.type === 'meeting' ? '會議' : '活動'}
+                    {(() => {
+                      switch(event.category) {
+                        case 'lecture': return '講座';
+                        case 'gathering': return '聚會';
+                        case 'workshop': return '工作坊';
+                        case 'competition': return '比賽';
+                        default: return '活動';
+                      }
+                    })()}
                   </span>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#7f8c8d', fontSize: '0.9rem' }}>
                     <Calendar size={16} />
