@@ -30,11 +30,11 @@
 }
 
 .hero-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  max-width: 1200px;
+  text-align: center;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
@@ -55,6 +55,7 @@
   margin-bottom: 30px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: 800px;
 }
 
 .mission-statement p {
@@ -62,6 +63,32 @@
   line-height: 1.7;
   margin: 0;
   font-weight: 400;
+}
+
+.president-message {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  max-width: 800px;
+}
+
+.president-message h3 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.president-message p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0;
+  font-weight: 400;
+  text-align: left;
 }
 
 .hero-buttons {

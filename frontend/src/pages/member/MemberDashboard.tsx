@@ -109,7 +109,12 @@ const MemberDashboard: React.FC = () => {
                 {user?.membershipExpiry && (
                   <div className="info-item">
                     <strong>會員期限：</strong>
-                    <span>{user.membershipExpiry.toLocaleDateString('zh-TW')}</span>
+                    <span>
+                      {user.membershipExpiry.getFullYear() === 2099 
+                        ? '永久會員' 
+                        : user.membershipExpiry.toLocaleDateString('zh-TW')
+                      }
+                    </span>
                   </div>
                 )}
               </div>
@@ -144,7 +149,7 @@ const MemberDashboard: React.FC = () => {
                   <Award size={24} />
                 </div>
                 <div className="stat-content">
-                  <h3>5</h3>
+                  <h3>0</h3>
                   <p>參與活動</p>
                 </div>
               </div>
@@ -154,7 +159,7 @@ const MemberDashboard: React.FC = () => {
                   <Heart size={24} />
                 </div>
                 <div className="stat-content">
-                  <h3>NT$ 12,000</h3>
+                  <h3>{user?.name === '鄭百喬' ? 'HKD 50,000' : 'HKD 0'}</h3>
                   <p>累計捐款</p>
                 </div>
               </div>
@@ -164,7 +169,7 @@ const MemberDashboard: React.FC = () => {
                   <TrendingUp size={24} />
                 </div>
                 <div className="stat-content">
-                  <h3>2年</h3>
+                  <h3>0年</h3>
                   <p>會員年資</p>
                 </div>
               </div>
@@ -203,11 +208,14 @@ const MemberDashboard: React.FC = () => {
               <div className="contact-info">
                 <div className="contact-item">
                   <Mail size={18} />
-                  <span>member@alumni.edu</span>
+                  <span>alumni.bmed@gmail.com</span>
                 </div>
                 <div className="contact-item">
-                  <Phone size={18} />
-                  <span>02-1234-5678</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" strokeWidth="2"/>
+                    <path d="m7 8 5 5 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <a href="https://www.instagram.com/cuhk_bmedaa/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>@cuhk_bmedaa</a>
                 </div>
               </div>
             </div>

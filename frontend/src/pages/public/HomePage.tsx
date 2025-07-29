@@ -20,6 +20,13 @@ const HomePage: React.FC = () => {
             <div className="mission-statement">
               <p>本會的宗旨是團結所有畢業於「香港中文大學數學及數學教育課程」的校友，加強守望相助精神及協助提高校友的專業水平，並以其專業知識推動香港數學教育發展。</p>
             </div>
+            
+            {/* 會長的話 */}
+            <div className="president-message">
+              <h3>會長的話</h3>
+              <p>親愛的校友們，歡迎加入香港中文大學數學及數學教育課程校友會這個溫暖的大家庭。作為數學教育界的同工，我們每一位都肩負著推動香港數學教育發展的重要使命。無論您在教育前線、學術研究或其他專業領域發光發亮，都是我們引以為傲的成就。透過校友會的平台，我們希望能為大家提供更多專業交流、互助合作的機會，讓我們的專業知識和經驗得以傳承和發揚。讓我們攜手共進，在各自的崗位上繼續為香港的數學教育貢獻一份力量，同時也為我們的校友網絡增添更多精彩篇章。期待在校友會的各項活動中與大家相聚，共同創造更美好的未來。</p>
+            </div>
+            
             <div className="hero-buttons">
               <Link to="/join" className="btn btn-primary">
                 加入校友會
@@ -29,12 +36,6 @@ const HomePage: React.FC = () => {
                 了解更多
               </Link>
             </div>
-          </div>
-          <div className="hero-image">
-            <img 
-              src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop" 
-              alt="校園景色" 
-            />
           </div>
         </div>
       </section>

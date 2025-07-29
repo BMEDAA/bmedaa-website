@@ -95,7 +95,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
           graduationYear: memberData.graduationYear,
           department: '香港中文大學數學及數學教育課程',
           isActive: true,
-          membershipExpiry: new Date('2025-12-31'),
+          membershipExpiry: new Date('2099-12-31'), // 永久會員
         };
 
         // 儲存到 localStorage

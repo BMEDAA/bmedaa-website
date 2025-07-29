@@ -22,17 +22,13 @@ const RegisterForm: React.FC = () => {
   const navigate = useNavigate();
 
   const departments = [
-    '資訊工程學系',
-    '電機工程學系',
-    '機械工程學系',
-    '化學工程學系',
-    '土木工程學系',
-    '企業管理學系',
-    '財務金融學系',
-    '會計學系',
-    '經濟學系',
-    '法律學系',
-    '其他',
+    '數學系',
+    '數學教育學位教師教育文憑課程',
+    '數學與資訊科技教育學位教師教育文憑課程', 
+    '教育學院數學教育組',
+    '理學院數學系',
+    '教育學院',
+    '其他相關課程',
   ];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
