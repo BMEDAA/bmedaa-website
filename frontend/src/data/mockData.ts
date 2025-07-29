@@ -241,10 +241,17 @@ export const mockNavigation: NavigationItem[] = [
   },
   {
     id: 'faq',
-    title: 'FAQ',
+    title: '常見問題',
     path: '/faq',
     isPublic: true,
     icon: 'help-circle',
+  },
+  {
+    id: 'benefits',
+    title: '福利品與服務',
+    path: '/benefits',
+    isPublic: true,
+    icon: 'gift',
   },
 ];
 
