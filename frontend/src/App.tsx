@@ -54,7 +54,6 @@ function App() {
               <Route path="/spotlight" element={<SpotlightPage />} />
               <Route path="/donate" element={<DonatePage />} />
               <Route path="/faq" element={<FAQPage />} />
-              <Route path="/forum" element={<ForumPage />} />
               <Route path="/benefits" element={<BenefitsPage />} />
               <Route path="/privacy" element={<PrivacyPage />} />
               
