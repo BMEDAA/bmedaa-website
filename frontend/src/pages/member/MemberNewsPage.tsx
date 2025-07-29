@@ -52,15 +52,6 @@ const MemberNewsPage: React.FC = () => {
       category: 'professional',
       date: new Date('2025-01-12'),
       isImportant: false
-    },
-    {
-      id: '5',
-      title: '🎓 校友成就表揚',
-      content: '恭喜本會會員鄭百喬校友在數學教育領域的傑出貢獻！鄭校友多年來致力推動香港數學教育發展，並慷慨捐助校友會活動經費達HKD 50,000。同時感謝所有會員對校友會的支持，讓我們能夠持續為數學教育界服務。我們將設立「傑出校友獎」以表揚在各領域有卓越表現的會員。',
-      summary: '表揚鄭百喬校友傑出貢獻及慷慨捐助',
-      category: 'general',
-      date: new Date('2025-01-10'),
-      isImportant: false
     }
   ];
 
