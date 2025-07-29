@@ -75,6 +75,12 @@ export const mockEvents: Event[] = [
     contactPerson: '秘書處',
     contactEmail: 'alumni.bmed@gmail.com',
     imageUrl: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&h=400&fit=crop',
+    attachments: [
+      {
+        name: 'BMEDAA 2025-2027 工作計劃.pdf',
+        url: '#'
+      }
+    ],
   },
   {
     id: '2',

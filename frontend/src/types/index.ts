@@ -45,6 +45,10 @@ export interface Event {
   contactPerson: string;
   contactEmail: string;
   imageUrl?: string;
+  attachments?: {
+    name: string;
+    url: string;
+  }[];
 }
 
 export interface Publication {
