@@ -5,109 +5,75 @@ const JoinPage: React.FC = () => {
   return (
     <div className="page-container">
       <div className="page-header">
-        <h1>加入香港中文大學數學及數學教育課程校友會</h1>
-        <p>歡迎成為我們大家庭的一員，共同推動數學教育發展</p>
+        <h1>加入香港中文大學數學及數學教育校友會</h1>
+        <p>歡迎所有香港中文大學數學及數學教育相關畢業生加入我們的大家庭</p>
       </div>
       
       {/* 申請須知 */}
-      <div className="card" style={{ marginBottom: '30px' }}>
+      <div className="card">
         <div className="card-header">
-          <h3>📋 申請須知</h3>
+          <h2>申請須知</h2>
         </div>
         <div className="card-content">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
-            <div style={{ display: 'flex', alignItems: 'flex-start', gap: '15px' }}>
-              <UserPlus size={24} style={{ color: '#667eea', marginTop: '2px', flexShrink: 0 }} />
-              <div>
-                <h4 style={{ margin: '0 0 8px 0', color: '#2c3e50' }}>申請資格</h4>
-                <p style={{ margin: 0, color: '#5a6c7d', lineHeight: 1.6 }}>
-                  所有畢業於香港中文大學數學及數學教育課程的校友均可申請加入
-                </p>
-              </div>
+          <div style={{ display: 'grid', gap: '20px' }}>
+            <div>
+              <h3 style={{ color: '#2c3e50', marginBottom: '10px' }}>申請資格</h3>
+              <p>凡香港中文大學數學及數學教育相關課程的畢業生，均可申請成為本會會員。</p>
             </div>
-
-            <div style={{ display: 'flex', alignItems: 'flex-start', gap: '15px' }}>
-              <FileText size={24} style={{ color: '#667eea', marginTop: '2px', flexShrink: 0 }} />
-              <div>
-                <h4 style={{ margin: '0 0 8px 0', color: '#2c3e50' }}>所需文件</h4>
-                <p style={{ margin: 0, color: '#5a6c7d', lineHeight: 1.6 }}>
-                  請準備畢業證書或相關證明文件以供審核
-                </p>
-              </div>
-            </div>
-
-            <div style={{ display: 'flex', alignItems: 'flex-start', gap: '15px' }}>
-              <Clock size={24} style={{ color: '#667eea', marginTop: '2px', flexShrink: 0 }} />
-              <div>
-                <h4 style={{ margin: '0 0 8px 0', color: '#2c3e50' }}>審核時間</h4>
-                <p style={{ margin: 0, color: '#5a6c7d', lineHeight: 1.6 }}>
-                  申請提交後，我們會在2-3個工作日內進行審核並回覆
-                </p>
-              </div>
+            
+            <div>
+              <h3 style={{ color: '#2c3e50', marginBottom: '10px' }}>審核流程</h3>
+              <p>申請提交後，幹事會將在2-4週內完成審核程序，並透過電郵通知審核結果。</p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Google表單區域 */}
+      {/* Google 表單 */}
       <div className="card">
         <div className="card-header">
-          <h3>📝 入會申請表</h3>
+          <h2>線上申請表格</h2>
         </div>
         <div className="card-content">
-          {/* 外部連結選項 */}
-          <div style={{ marginBottom: '30px', textAlign: 'center' }}>
-            <p style={{ marginBottom: '20px', color: '#5a6c7d' }}>
-              請點擊下方按鈕開啟申請表格，或使用下方的嵌入式表單：
-            </p>
+          <p style={{ marginBottom: '20px', color: '#5a6c7d' }}>
+            請填寫以下申請表格，我們會盡快處理您的申請：
+          </p>
+          
+          <div style={{ textAlign: 'center', marginBottom: '20px' }}>
             <a 
               href="https://docs.google.com/forms/d/e/1FAIpQLSdk22CYBwlwCsepXiNQFK6aclK8BT-PIyG35Fz7qY4jAHy2cw/viewform"
               target="_blank"
               rel="noopener noreferrer"
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '10px',
-                background: 'linear-gradient(135deg, #667eea, #764ba2)',
+              className="btn btn-primary"
+              style={{ 
+                display: 'inline-block',
+                background: '#667eea',
                 color: 'white',
-                padding: '15px 25px',
+                padding: '12px 24px',
                 borderRadius: '8px',
                 textDecoration: 'none',
-                fontWeight: '600',
-                fontSize: '1.1rem',
-                transition: 'all 0.3s ease'
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.transform = 'translateY(-2px)';
-                e.currentTarget.style.boxShadow = '0 8px 25px rgba(102, 126, 234, 0.4)';
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = 'none';
+                fontWeight: '600'
               }}
             >
-              <FileText size={20} />
               開啟申請表格
-              <ExternalLink size={16} />
             </a>
           </div>
-
-          {/* 嵌入式表單 */}
+          
           <div style={{ 
-            border: '2px solid #ecf0f1', 
-            borderRadius: '12px', 
-            overflow: 'hidden',
-            background: '#f8f9fa'
+            width: '100%', 
+            height: '600px', 
+            border: '1px solid #ddd', 
+            borderRadius: '8px',
+            overflow: 'hidden'
           }}>
             <iframe 
               src="https://docs.google.com/forms/d/e/1FAIpQLSdk22CYBwlwCsepXiNQFK6aclK8BT-PIyG35Fz7qY4jAHy2cw/viewform?embedded=true" 
               width="100%" 
-              height="1200" 
+              height="100%" 
               frameBorder="0" 
               marginHeight={0} 
               marginWidth={0}
-              style={{ display: 'block' }}
-              title="香港中文大學數學及數學教育課程校友會入會申請表"
+              title="香港中文大學數學及數學教育校友會入會申請表"
             >
               載入中…
             </iframe>

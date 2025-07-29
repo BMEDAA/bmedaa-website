@@ -8,7 +8,7 @@ const NewsPage: React.FC = () => {
     <div className="page-container">
       <div className="page-header">
         <h1>最新資訊</h1>
-        <p>瀏覽香港中文大學數學及數學教育課程校友會的最新公告和新聞動態</p>
+        <p>瀏覽香港中文大學數學及數學教育校友會的最新公告和新聞動態</p>
       </div>
       
       {publicNews.length > 0 ? (

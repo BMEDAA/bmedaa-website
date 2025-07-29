@@ -6,7 +6,7 @@ const ContactPage: React.FC = () => {
     <div className="page-container">
       <div className="page-header">
         <h1>聯絡我們</h1>
-        <p>香港中文大學數學及數學教育課程校友會聯絡資訊</p>
+        <p>香港中文大學數學及數學教育校友會聯絡資訊</p>
       </div>
       
       <div className="grid grid-2" style={{ gap: '30px' }}>

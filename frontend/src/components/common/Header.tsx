@@ -35,7 +35,7 @@ const Header: React.FC = () => {
           <div className="logo-icon">🎓</div>
           <div className="logo-text">
             <h1>BMEDAA</h1>
-            <span>數學及數學教育課程校友會</span>
+            <span>數學及數學教育校友會</span>
           </div>
         </Link>
 
@@ -98,7 +98,7 @@ const Header: React.FC = () => {
           ) : (
             <div className="auth-buttons">
               <Link to="/login" className="login-btn">登入</Link>
-              <Link to="/register" className="register-btn">註冊</Link>
+              <Link to="/forum" className="register-btn">論壇</Link>
             </div>
           )}
         </div>
@@ -174,8 +174,8 @@ const Header: React.FC = () => {
                 <Link to="/login" className="mobile-login-btn" onClick={() => setIsMenuOpen(false)}>
                   登入
                 </Link>
-                <Link to="/register" className="mobile-register-btn" onClick={() => setIsMenuOpen(false)}>
-                  註冊
+                <Link to="/forum" className="mobile-register-btn" onClick={() => setIsMenuOpen(false)}>
+                  論壇
                 </Link>
               </div>
             )}

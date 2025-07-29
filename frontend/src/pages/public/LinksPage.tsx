@@ -6,7 +6,7 @@ const LinksPage: React.FC = () => {
     <div className="page-container">
       <div className="page-header">
         <h1>常用連結</h1>
-        <p>香港中文大學數學及數學教育課程校友會相關連結</p>
+        <p>香港中文大學數學及數學教育校友會相關連結</p>
       </div>
       
       <div className="card">

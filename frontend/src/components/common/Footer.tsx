@@ -35,16 +35,10 @@ const Footer: React.FC = () => {
           {/* 校友會資訊 */}
           <div className="footer-section">
             <div className="footer-logo">
-              <div className="footer-logo-icon">🎓</div>
-              <div className="footer-logo-text">
-                <h3>BMEDAA校友會</h3>
-                <span>數學及數學教育課程校友會</span>
-              </div>
+              <h3>BMEDAA校友會</h3>
+              <span>數學及數學教育校友會</span>
+              <p>本會的宗旨是團結所有畢業於「香港中文大學數學及數學教育課程」的校友，加強守望相助精神及協助提高校友的專業水平，並以其專業知識推動香港數學教育發展。</p>
             </div>
-            <p className="footer-description">
-              團結所有畢業於「香港中文大學數學及數學教育課程」的校友，
-              加強守望相助精神及協助提高校友的專業水平。
-            </p>
             <div className="social-links">
               <a 
                 href="https://www.instagram.com/cuhk_bmedaa/" 
@@ -118,16 +112,7 @@ const Footer: React.FC = () => {
 
         {/* 底部版權區 */}
         <div className="footer-bottom">
-          <div className="footer-bottom-content">
-            <div className="copyright">
-              <p>&copy; {currentYear} 香港中文大學數學及數學教育課程校友會. 版權所有.</p>
-            </div>
-            <div className="footer-bottom-links">
-              <Link to="/privacy" className="footer-bottom-link">隱私政策</Link>
-              <Link to="/terms" className="footer-bottom-link">使用條款</Link>
-              <Link to="/sitemap" className="footer-bottom-link">網站地圖</Link>
-            </div>
-          </div>
+          <p>&copy; {currentYear} 香港中文大學數學及數學教育校友會. 版權所有.</p>
         </div>
       </div>
     </footer>

@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
       <section className="hero-section">
         <div className="hero-content">
           <div className="hero-text">
-            <h1>香港中文大學數學及數學教育課程校友會</h1>
+            <h1>香港中文大學數學及數學教育校友會</h1>
             <div className="mission-statement">
               <p>本會的宗旨是團結所有畢業於「香港中文大學數學及數學教育課程」的校友，加強守望相助精神及協助提高校友的專業水平，並以其專業知識推動香港數學教育發展。</p>
             </div>
@@ -24,7 +24,7 @@ const HomePage: React.FC = () => {
             {/* 會長的話 */}
             <div className="president-message">
               <h3>會長的話</h3>
-              <p>親愛的校友們，歡迎加入香港中文大學數學及數學教育課程校友會這個溫暖的大家庭。作為數學教育界的同工，我們每一位都肩負著推動香港數學教育發展的重要使命。無論您在教育前線、學術研究或其他專業領域發光發亮，都是我們引以為傲的成就。透過校友會的平台，我們希望能為大家提供更多專業交流、互助合作的機會，讓我們的專業知識和經驗得以傳承和發揚。讓我們攜手共進，在各自的崗位上繼續為香港的數學教育貢獻一份力量，同時也為我們的校友網絡增添更多精彩篇章。期待在校友會的各項活動中與大家相聚，共同創造更美好的未來。</p>
+              <p>親愛的校友們，歡迎加入香港中文大學數學及數學教育校友會這個溫暖的大家庭。作為數學教育界的同工，我們每一位都肩負著推動香港數學教育發展的重要使命。無論您在教育前線、學術研究或其他專業領域發光發亮，都是我們引以為傲的成就。透過校友會的平台，我們希望能為大家提供更多專業交流、互助合作的機會，讓我們的專業知識和經驗得以傳承和發揚。讓我們攜手共進，在各自的崗位上繼續為香港的數學教育貢獻一份力量，同時也為我們的校友網絡增添更多精彩篇章。期待在校友會的各項活動中與大家相聚，共同創造更美好的未來。</p>
             </div>
             
             <div className="hero-buttons">
@@ -119,6 +119,41 @@ const HomePage: React.FC = () => {
             <h2>近期活動</h2>
             <Link to="/events" className="view-more">查看全部</Link>
           </div>
+          
+          {/* Instagram 活動提示 */}
+          {upcomingEvents.length === 0 && (
+            <div style={{ 
+              textAlign: 'center', 
+              padding: '40px 20px', 
+              background: '#f8f9fa', 
+              borderRadius: '12px', 
+              margin: '20px 0' 
+            }}>
+              <h3 style={{ color: '#2c3e50', marginBottom: '10px' }}>最新活動資訊</h3>
+              <p style={{ color: '#7f8c8d', marginBottom: '15px' }}>
+                活動詳情請關注我們的Instagram帳號獲取最新資訊
+              </p>
+              <a 
+                href="https://www.instagram.com/cuhk_bmedaa/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  background: '#667eea',
+                  color: 'white',
+                  padding: '10px 20px',
+                  borderRadius: '8px',
+                  textDecoration: 'none',
+                  fontWeight: '600'
+                }}
+              >
+                📱 關注 @cuhk_bmedaa
+              </a>
+            </div>
+          )}
+          
           <div className="events-grid">
             {upcomingEvents.map((event) => (
               <div key={event.id} className="event-card">

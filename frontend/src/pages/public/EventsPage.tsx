@@ -9,7 +9,7 @@ const EventsPage: React.FC = () => {
     <div className="page-container">
       <div className="page-header">
         <h1>活動</h1>
-        <p>查看香港中文大學數學及數學教育課程校友會即將舉辦的活動和過往活動記錄</p>
+        <p>查看香港中文大學數學及數學教育校友會即將舉辦的活動和過往活動記錄</p>
       </div>
       
       {publicEvents.length > 0 ? (
